@@ -16,7 +16,7 @@ var (
 // To open the connection with our database i.e mysql
 func Connect() { //make sure the function name is Uppercase
 
-	d, err := gorm.Open("myspl", "shrey: password/simple?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "simple:password/simple?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
